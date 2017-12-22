@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.css"/>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			body,.mui-content {
+				background: #fff;
+			}
+			.mui-content .zhuanti{
+				padding: 1rem 0 1rem 1rem;
+			}
+			.mui-content .zhuanti:first-child .yixuan a{
+				background: #2cc3e5;
+				color: #fff;
+			}
+			.mui-content .zhuanti h2{
+				margin-bottom: 0.5rem;
+				color: #8E8E8E;
+				font-size: 1rem;
+			}
+			.mui-content .zhuanti .yixuan{
+				display: flex;
+				flex-flow: wrap;
+			}
+			.mui-content .zhuanti .yixuan a{
+				margin-bottom: 0.5625rem;
+				display: block;
+				width: 21%;
+				height: 2.78rem;
+				border-radius: .7rem;
+				line-height: 2.78rem;
+				text-align: center;
+				background: #F2F2F2;
+				color: #3A3A3A;
+				font-size: .8rem;
+				margin-right: 4%;
+			}
+		</style>
+	</head>
+	<body id="fenlei">
+		
+		
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">选择类别</h1>
+		    <a class="mui-action-back mui-pull-right" style="margin: 12px;color: #AEAEAE;">完成</a>
+		</header>
+		<div class="mui-content">
+		    <div class="zhuanti">
+		    	<h2>点击取消已选</h2>
+		    	<div class="yixuan">
+		    		<!--<a>其它</a>-->
+		    	</div>
+		    </div>
+		    <div class="zhuanti zhuantiB">
+		    	<h2>点击添加</h2>
+		    	<div class="yixuan" id="yixuan">
+		    		<a onclick="add(this)">综合</a>
+		    		<a onclick="add(this)">木艺</a>
+		    		<a onclick="add(this)">布艺</a>
+		    		<a onclick="add(this)">旧物改造</a>
+		    		<a onclick="add(this)">皮艺</a>
+		    		<a onclick="add(this)">橡皮章</a>
+		    		<a onclick="add(this)">发饰</a>
+		    		<a onclick="add(this)">纸艺</a>
+		    		<a onclick="add(this)">软陶粘土</a>
+		    		<a onclick="add(this)">园艺花艺</a>
+		    		<a onclick="add(this)">钩编</a>
+		    		<a onclick="add(this)">手绘</a>
+		    		<a onclick="add(this)">亲子手工</a>
+		    		<a onclick="add(this)">滴胶热缩</a>
+		    		<a onclick="add(this)">羊毛毡</a>
+		    		<a onclick="add(this)">电子科技</a>
+		    		<a onclick="add(this)">刺绣</a>
+		    		<a onclick="add(this)">剪纸</a>
+		    		<a onclick="add(this)">美食烘</a>
+		    	</div>
+		    </div>
+		</div>
+		
+	</body>
+	<script src="js/add_del.js" type="text/javascript" charset="utf-8"></script>
+</html>

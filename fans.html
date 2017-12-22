@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>粉丝</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			body,.mui-content{
+				background: #fff;
+			}
+			li{
+				display: flex;
+				align-items: center;
+				width: 100%;
+				height: 4.375rem;
+				padding: 0 1rem;
+				border-bottom: 1px solid #EEEEEE;
+			}
+			li a{
+				display: inline-block;
+				color: #000000;
+				line-height: 4.375rem;
+				height: 4.375rem;
+				width: 67%;
+				padding-left: 1rem;
+			}
+			li b{
+				width:2.8125rem ;
+				height: 2.8125rem;
+				border-radius: 50%;
+			}
+			li img{
+				width:2.8125rem ;
+				height: 2.8125rem;
+				
+			}
+			li span{
+				display: block;
+				width: 4.375rem;
+				height: 2.1875rem;
+				font-size: 0.875rem;
+				line-height: 2.1875rem;
+				text-align: center;
+				color: #007DBD;
+				border: 1px solid #007DBD;
+				border-radius: 10px;
+				
+			}
+		</style>
+	</head>
+
+	<body id="fans">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">粉丝</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-list-unstyled">
+				<li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    <li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    <li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    <li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    <li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    <li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    <li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    <li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    <li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    <li>
+			    	<b><img src="img/index/fans1.jpg"/></b><a>莫失莫忘</a><span class="mui-pull-right attention" onclick="attention(this)">+关注</span>   
+			    </li>
+			    
+			        
+			</ul>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		function attention(a){
+			if(a.innerText=="+关注"){
+				a.style.border="none";
+				a.style.backgroundColor="#DDDDDD";
+				a.style.color="#8E8E8E";
+				a.innerHTML="已关注";
+			}else{
+				a.style.border="1px solid #007DBD";
+				a.style.backgroundColor="#fff";
+				a.style.color="#007DBD";
+				a.innerHTML="+关注";
+			}
+			
+		}
+	</script>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>首页</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/public.css" rel="stylesheet"/>    
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	document.createElement("price");
+    </script>
+</head>
+<body>
+<!--搜索框-->
+<header class="mui-bar mui-bar-nav index-searching">
+	<form>
+	    <div class="mui-pull-left">
+	    	<a class="mui-icon mui-icon-search"></a>
+			<input type="text" placeholder="请输入搜索关键字"/>
+	    </div>
+	    <div class="mui-pull-right tea-fabu">发布</div>
+    </form>
+</header>
+
+<div class="mui-content">
+	<!--首页-二级导航-->
+    <div class="index-subnav">
+    	<div class="sub-center">
+    		<a class="cur">热门</a>
+    		<a>发现</a>
+    		<a>专题</a>
+    		<a>活动</a>
+    	</div>
+    </div>
+    <div class="index-list">
+    	<!--热门-->
+	    <div class="index-item cur">
+		    <!--首页-热门-轮播-->
+		    <div id="slider" class="mui-slider" >
+			  <div class="mui-slider-group mui-slider-loop">http://127.0.0.1:8020/mui-huadi/index.html#
+			    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			      <a href="#">
+			        <img src="img/index/remen/rm_banner1.jpg">
+			      </a>
+			    </div>
+			    <!-- 第一张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="img/index/remen/rm_banner1.jpg">
+			      </a>
+			    </div>
+			    <!-- 第二张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="img/index/remen/rm_banner1.jpg">
+			      </a>
+			    </div>
+			    <!-- 第三张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="img/index/remen/rm_banner1.jpg">
+			      </a>
+			    </div>
+			    <!-- 第四张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="img/index/remen/rm_banner1.jpg">
+			      </a>
+			    </div>
+			    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			      <a href="#">
+			        <img src="img/index/remen/rm_banner1.jpg">
+			      </a>
+			    </div>
+			  </div>
+			  <div class="mui-slider-indicator">
+			    <div class="mui-indicator mui-active"></div>
+			    <div class="mui-indicator"></div>
+			    <div class="mui-indicator"></div>
+			    <div class="mui-indicator"></div>
+			  </div>
+			</div>
+		
+			<!--线上课、礼物定制 导航-->
+			<div class="hot-icon">
+				<ul>
+					<li id="xianshang">线上课</li>
+					<li id="liwu">礼物定制</li>
+					<li id="cailiao">材料库</li>
+					<li id="daren">达人</li>
+				</ul>
+			</div>
+			
+			<!--线上课、礼物定制 专题-->
+			<div class="icon-zhuanti">
+				<ul>
+					<li>
+						<a href="">
+							<img src="img/index/remen/rm_subject.jpg" alt="" />
+							<div class="icon-info">
+								<h3>线上课</h3>
+								<p class="mui-ellipsis">工笔画花鸟团扇特价课</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="img/index/remen/rm_dingzhi.jpg" alt="" />
+							<div class="icon-info">
+								<h3>礼物定制</h3>
+								<p class="mui-ellipsis">定做专属于自己的唯一</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		
+			<!--热门线上课-->
+			<div class="hot-subject">
+				<div class="sub-title">
+					<h2>热门线上课<span>线上拜师，让天下没有难学的手艺</span></h2>
+				</div>
+				<ul class="sub-list">
+					<li>
+						<a href="">
+							<div class="s-list-img"><img src="img/index/remen/hot_online1.jpg" alt="" /></div>
+							<div class="s-list-text">
+								<h3 class="mui-ellipsis">鹤归心日本细工花特价班<span class="mui-ellipsis">一年带你学习日本细工工艺</span></h3>
+								<p class="mui-ellipsis-2">日本饭田深雪艺术造花认证造花师，11年专业手工经验，鹤归心品牌创始人。</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="s-list-img"><img src="img/index/remen/hot_online2.jpg" alt="" /></div>
+							<div class="s-list-text">
+								<h3 class="mui-ellipsis">鹤归心日本细工花特价班<span class="mui-ellipsis">一年带你学习日本细工工艺</span></h3>
+								<p class="mui-ellipsis-2">日本饭田深雪艺术造花认证造花师，11年专业手工经验，鹤归心品牌创始人。</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="s-list-img"><img src="img/index/remen/hot_online3.jpg" alt="" /></div>
+							<div class="s-list-text">
+								<h3 class="mui-ellipsis">鹤归心日本细工花特价班<span class="mui-ellipsis">一年带你学习日本细工工艺</span></h3>
+								<p class="mui-ellipsis-2">日本饭田深雪艺术造花认证造花师，11年专业手工经验，鹤归心品牌创始人。</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="" class="subject-more">查看全部<span>83</span>个课业</a>
+			</div>
+		
+			<!--热门短训班-->
+			<div class="hot-subject">
+				<div class="sub-title">
+					<h2>热门短训班<span>线上拜师，让天下没有难学的手艺</span></h2>
+				</div>
+				<ul class="sub-list">
+					<li>
+						<a href="">
+							<div class="s-list-img"><img src="img/index/remen/hot_shot1.jpg" alt="" /></div>
+							<div class="s-list-text">
+								<h3 class="mui-ellipsis">国民姐烘培短训班<span class="mui-ellipsis">12款经典甜品西点手把手教学</span></h3>
+								<p class="mui-ellipsis-2">英国PME皇家装饰蛋糕学校认证，知名畅销美食书作者，浅茶烘培工作室创始人</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="s-list-img"><img src="img/index/remen/hot_shot2.jpg" alt="" /></div>
+							<div class="s-list-text">
+								<h3 class="mui-ellipsis">国民姐烘培短训班<span class="mui-ellipsis">12款经典甜品西点手把手教学</span></h3>
+								<p class="mui-ellipsis-2">英国PME皇家装饰蛋糕学校认证，知名畅销美食书作者，浅茶烘培工作室创始人</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="s-list-img"><img src="img/index/remen/hot_shot3.jpg" alt="" /></div>
+							<div class="s-list-text">
+								<h3 class="mui-ellipsis">国民姐烘培短训班<span class="mui-ellipsis">12款经典甜品西点手把手教学</span></h3>
+								<p class="mui-ellipsis-2">英国PME皇家装饰蛋糕学校认证，知名畅销美食书作者，浅茶烘培工作室创始人</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="" class="subject-more">查看全部<span>83</span>个课业</a>
+			</div>
+	
+			<!--热门教程-->
+			<div class="hot-jiaocheng">
+				<div class="sub-title">
+					<h2>热门教程<span>也许是全球最大的手工教程库</span></h2>
+				</div>
+				<ul class="jc-list jc">
+					<li>
+						<a href="">
+							<div class="jc-img">
+								<img src="img/index/remen/hot_jiaocheng1.jpg" alt="" />
+							</div>
+							<p class="jc-intro mui-ellipsis-2">
+								【入坑必学】三生三世，许你桃花发钗！
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="jc-img">
+								<img src="img/index/remen/hot_jiaocheng2.jpg" alt="" />
+							</div>
+							<p class="jc-intro mui-ellipsis-2">
+								【入坑必学】三生三世，许你桃花发钗！
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="jc-img">
+								<img src="img/index/remen/hot_jiaocheng3.jpg" alt="" />
+							</div>
+							<p class="jc-intro mui-ellipsis-2">
+								【入坑必学】三生三世，许你桃花发钗！
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="jc-img">
+								<img src="img/index/remen/hot_jiaocheng4.jpg" alt="" />
+							</div>
+							<p class="jc-intro mui-ellipsis-2">
+								【入坑必学】三生三世，许你桃花发钗！
+							</p>
+						</a>
+					</li>
+				</ul>
+				<a href="" class="subject-more">查看全部<span>110</span>个热门教程</a>
+			</div>
+	
+			<!--材料集市-->
+			<div class="hot-jiaocheng cailiao">
+				<div class="sub-title">
+					<h2>材料集市<span>手工入坑第一栈</span></h2>
+				</div>
+				<ul class="jc-list cl">
+					<li>
+						<a href="">
+							<div class="jc-img">
+								<img src="img/index/remen/rm-cailiao1.jpg" alt="" />
+							</div>
+							<p class="jc-intro mui-ellipsis-2">
+								【入坑必学】粘土手工入门必备材料工具
+							</p>
+							<div class="cl-price">
+								<price>￥40.00</price>
+								<p><span>6657</span>人已买</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="jc-img">
+								<img src="img/index/remen/rm-cailiao2.jpg" alt="" />
+							</div>
+							<p class="jc-intro mui-ellipsis-2">
+								【入坑必学】粘土手工入门必备材料工具
+							</p>
+							<div class="cl-price">
+								<price>￥40.00</price>
+								<p><span>6657</span>人已买</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="jc-img">
+								<img src="img/index/remen/rm-cailiao3.jpg" alt="" />
+							</div>
+							<p class="jc-intro mui-ellipsis-2">
+								【入坑必学】粘土手工入门必备材料工具
+							</p>
+							<div class="cl-price">
+								<price>￥40.00</price>
+								<p><span>6657</span>人已买</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="jc-img">
+								<img src="img/index/remen/rm-cailiao4.jpg" alt="" />
+							</div>
+							<p class="jc-intro mui-ellipsis-2">
+								【入坑必学】粘土手工入门必备材料工具
+							</p>
+							<div class="cl-price">
+								<price>￥40.00</price>
+								<p><span>6657</span>人已买</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="" class="subject-more">查看更多热门材料</a>
+			</div>
+		</div>
+		<!--发现-->
+		<div class="index-item">
+			<!--条件筛选区域-->
+		    <div class="tuwen-select-type zhanke">
+		    	<div class="zk-zonghe">
+		    		<h2>发现</h2>
+		    		<p>软陶粘土</p>
+		    	</div>
+		    	<div class="ctu-type-icon mui-icon mui-icon mui-icon-info"></div>
+		    	<div class="clear"></div>
+		    </div>
+		    <ul class="faxian-list">
+		    	<li>
+		    		<a id="faxian_xiangqing">
+			    		<img src="img/index/faxian/fx-img1.jpg" alt="" />
+			    		<p class="mui-ellipsis">刺绣-少数民族的风采&nbsp;&nbsp;彝族的民饰</p>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+			    		<img src="img/index/faxian/fx-img2.jpg" alt="" />
+			    		<p class="mui-ellipsis">刺绣-少数民族的风采&nbsp;&nbsp;彝族的民饰</p>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+			    		<img src="img/index/faxian/fx-img3.jpg" alt="" />
+			    		<p class="mui-ellipsis">刺绣-少数民族的风采&nbsp;&nbsp;彝族的民饰</p>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+			    		<img src="img/index/faxian/fx-img4.jpg" alt="" />
+			    		<p class="mui-ellipsis">刺绣-少数民族的风采&nbsp;&nbsp;彝族的民饰</p>
+		    		</a>
+		    	</li>
+		    </ul>
+		</div>
+		<!--专题-->
+		<div class="index-item">
+			<!--条件筛选区域-->
+		    <div class="tuwen-select-type zhanke">
+		    	<div class="zk-zonghe">
+		    		<h2>教程专题</h2>
+		    		<p><a href="">手艺人推荐</a></p>
+		    	</div>
+		    	<div class="ctu-type-icon mui-icon mui-icon mui-icon-info"></div>
+		    	<div class="clear"></div>
+		    </div>
+		    <ul class="faxian-list">
+		    	<li>
+		    		<a id="zhuanti_more">
+			    		<img src="img/index/zhuanti/zt-pic1.jpg" alt="" />
+			    		<p class="mui-ellipsis">【教程专题】爱笑的猫运气不会太差</p>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+			    		<img src="img/index/zhuanti/zt-pic2.jpg" alt="" />
+			    		<p class="mui-ellipsis">【教程专题】爱笑的猫运气不会太差</p>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+			    		<img src="img/index/zhuanti/zt-pic3.jpg" alt="" />
+			    		<p class="mui-ellipsis">【教程专题】爱笑的猫运气不会太差</p>
+		    		</a>
+		    	</li>
+		    	<li>
+		    		<a href="">
+			    		<img src="img/index/zhuanti/zt-pic4.jpg" alt="" />
+			    		<p class="mui-ellipsis">【教程专题】爱笑的猫运气不会太差</p>
+		    		</a>
+		    	</li>
+		    </ul>
+		</div>
+		<!--活动-->
+		<div class="index-item">
+			<!--条件筛选区域-->
+		    <div class="tuwen-select-type zhanke">
+		    	<div class="zk-zonghe">
+		    		<h2>综合</h2>
+		    		<p>软陶粘土</p>
+		    	</div>
+		    	<div class="ctu-type-icon mui-icon mui-icon mui-icon-info"></div>
+		    	<div class="clear"></div>
+		    </div>
+		    <ul class="faxian-list huodong">
+		    	<li id="hd-xianq">
+		    		<img src="img/index/huodong/hd-pic1.jpg" alt="" />
+		    		<p class="mui-ellipsis">不只是玩泥巴！软陶粘土手工活动<span>征集作品时间：2017.11.1-2017.11.30</span></p>
+		    		<div class="h-ing">进行中</div>
+		    	</li>
+		    	<li>
+		    		<img src="img/index/huodong/hd-pic2.jpg" alt="" />
+		    		<p class="mui-ellipsis">不只是玩泥巴！软陶粘土手工活动</p>
+		    		<div class="h-ed">已结束</div>
+		    	</li>
+		    	<li>
+		    		<img src="img/index/huodong/hd-pic3.jpg" alt="" />
+		    		<p class="mui-ellipsis">不只是玩泥巴！软陶粘土手工活动</p>
+		    		<div class="h-ed">已结束</div>
+		    	</li>
+		    </ul>
+		</div>
+
+	</div>
+</div>
+	
+
+	
+	
+	
+
+	<script type="text/javascript">
+	//	轮播
+		var slider = mui("#slider");
+		slider.slider({
+			interval: 3000
+		});
+		
+	//	首页栏目（热门，发现，专题，活动）选项卡	
+		$(".sub-center a").click(function(){
+	        var q=$(this).index();
+	        $(this).addClass("cur").siblings().removeClass("cur");
+	        $(this).parents(".index-subnav").siblings(".index-list").children().eq(q).addClass("cur").siblings().removeClass("cur");
+    	});
+    	
+    	
+//  	点击“达人”右滑进入达人页面
+		document.getElementById("daren").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"home_daren.html",
+				id:"daren",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+
+//  	点击“材料库”右滑进入达人页面
+		document.getElementById("cailiao").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"home_cailiao.html",
+				id:"cailiao",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+
+//  	点击“礼物定制”右滑进入达人页面
+		document.getElementById("liwu").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"home_liwu.html",
+				id:"liwu",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+
+//  	点击“线上课”右滑进入达人页面
+		document.getElementById("xianshang").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"home_xianClass.html",
+				id:"xianshang",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+
+//  	点击“发现--刺绣”右滑进入详情页面
+		document.getElementById("faxian_xiangqing").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"faxian_xiangqing.html",
+				id:"faxian_xiangqing",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+
+//  	点击“专题--列表”右滑进入更多专题页面
+		document.getElementById("zhuanti_more").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"zhuanti_more.html",
+				id:"zhuanti_more",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+		
+		//  	点击“活动--列表”右滑进入活动详情页面
+		document.getElementById("hd-xianq").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"new-xianq.html",
+				id:"hd-xianq",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+
+	</script>
+	
+</body>
+</html>

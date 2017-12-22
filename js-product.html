@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购买</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link rel="stylesheet" href="css/mui.css"/>
+    <script type="text/javascript" src="js/resize.js"></script>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/Js-style.css"/>
+    <style>
+        .hei-mu{
+            position: fixed;
+            background: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: 200;
+            display: none;
+        }
+        .mui-preview-image.mui-fullscreen {
+				position: fixed;
+				z-index: 20;
+				background-color: #000;
+			}
+			.mui-preview-header,
+			.mui-preview-footer {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				z-index: 10;
+			}
+			.mui-preview-header {
+				height: 44px;
+				top: 0;
+			}
+			.mui-preview-footer {
+				height: 50px;
+				bottom: 0px;
+			}
+			.mui-preview-header .mui-preview-indicator {
+				display: block;
+				line-height: 25px;
+				color: #fff;
+				text-align: center;
+				margin: 15px auto 4px;
+				width: 70px;
+				background-color: rgba(0, 0, 0, 0.4);
+				border-radius: 12px;
+				font-size: 16px;
+			}
+			.mui-preview-image {
+				display: none;
+				-webkit-animation-duration: 0.5s;
+				animation-duration: 0.5s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+			.mui-preview-image.mui-preview-in {
+				-webkit-animation-name: fadeIn;
+				animation-name: fadeIn;
+			}
+			.mui-preview-image.mui-preview-out {
+				background: none;
+				-webkit-animation-name: fadeOut;
+				animation-name: fadeOut;
+			}
+			.mui-preview-image.mui-preview-out .mui-preview-header,
+			.mui-preview-image.mui-preview-out .mui-preview-footer {
+				display: none;
+			}
+			.mui-zoom-scroller {
+				position: absolute;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				-webkit-backface-visibility: hidden;
+			}
+			.mui-zoom {
+				-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+			}
+			.mui-slider .mui-slider-group .mui-slider-item img {
+				/*width: auto;*/
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+				width: 100%;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+				display: inline-table;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.mui-preview-loading {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: none;
+			}
+			.mui-preview-loading.mui-active {
+				display: block;
+			}
+			.mui-preview-loading .mui-spinner-white {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -25px;
+				margin-top: -25px;
+				height: 50px;
+				width: 50px;
+			}
+			.mui-preview-image img.mui-transitioning {
+				-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+				transition: transform 0.5s ease, opacity 0.5s ease;
+			}
+			@-webkit-keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@-webkit-keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			@keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			p img {
+				max-width: 100%;
+				height: auto;
+			}
+    </style>
+</head>
+<body id="jspRroduct">
+<div class="hei-mu"></div>
+<div class="mui-content">
+	<header class="mui-bar mui-bar-nav rgba">
+    	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	</header>
+    <!--轮播-->
+	    <div id="slider" class="mui-slider" >
+		  <div class="mui-slider-group mui-slider-loop">
+            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="img/jishi/Sp-x.jpg">
+                </a>
+            </div>
+            <!-- 第一张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="img/jishi/Sp-x.jpg"  data-preview-src="" data-preview-group="1" >
+                </a>
+            </div>
+            <!-- 第二张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="img/jishi/Sp-x.jpg"  data-preview-src="" data-preview-group="1" >
+                </a>
+            </div>
+            <!-- 第三张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="img/jishi/Sp-x.jpg"  data-preview-src="" data-preview-group="1" >
+                </a>
+            </div>
+            <!-- 第四张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="img/jishi/Sp-x.jpg"  data-preview-src="" data-preview-group="1" >
+                </a>
+            </div>
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="img/jishi/Sp-x.jpg">
+                </a>
+            </div>
+		  </div>
+		  <div class="mui-slider-indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		  </div>
+		</div>
+    <!--<img class="icon" src="img/jishi/Sp-x.jpg" alt=""/>-->
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="background: none
+    "></a>
+</div>
+<div class="mui-content">
+    <div class="nav">
+        <p><i>￥99.00 </i><span>以团10/件/2件</span></p>
+        <h1>原创手工 &nbsp; 古典发簪 复古名族风手工步瑶簪子简约盘发头饰饰品</h1>
+        <span>原创手工，很古风的一款木制发簪，复古又显低调，纯手工制品，独一无二，或许不足处，小主们要谅解! 想要不一样的美，就把它带回家，为您增加不一样的美!
+</span>
+    </div>
+    <div class="qi-tian">
+        <img src="img/jishi/qi-tian.jpg" alt=""/>
+    </div>
+    <div class="evaluation">
+        <h3>商品评价</h3>
+        <p>
+            <i>
+                <img src="img/jishi/Js-portrait.jpg" alt=""/>
+                <em>不该的</em>
+            </i>
+
+            <span>
+                2017.05.13
+            </span>
+        </p>
+        <div class="clear"></div>
+        <b>宝贝收到，非常喜欢，纯手工的，没有毛刺哦，
+            物流也很快!
+        </b>
+        <a id="pro-moreReviews">查看更多评价</a>
+    </div>
+    <div class="stores">
+        <p>
+            <i>
+                <img src="img/jishi/Js-fenhuang.jpg" alt=""/>
+                <em>凤凰涅磐旗舰店
+                </em>
+            </i>
+            <a id="jindian">进店逛逛</a>
+        </p>
+    </div>
+    <div class="Piiic">
+        <img src="img/jishi/Js-shop.jpg" alt=""/>
+
+    </div>
+    <div class="you-like">
+        <h1> <span></span>猜你喜欢<span></span></h1>
+    </div>
+    <div class="hot">
+        <ul>
+            <li>
+                <img src="img/jishi/Js-fazan.jpg" alt=""/>
+                <p>凤凰涅磐古典发簪女复
+                    古黑檀木簪子
+                </p>
+                <span>￥94.5<i>125人购买</i></span>
+
+            </li>
+            <li>
+                <img src="img/jishi/Js-fazan.jpg" alt=""/>
+                <p>凤凰涅磐古典发簪女复
+                    古黑檀木簪子
+                </p>
+                <span>￥94.5<i>125人购买</i></span>
+            </li>
+            <li>
+                <img src="img/jishi/Js-fazan.jpg" alt=""/>
+                <p>凤凰涅磐古典发簪女复
+                    古黑檀木簪子
+                </p>
+                <span>￥94.5<i>125人购买</i></span>
+            </li>
+            <li>
+                <img src="img/jishi/Js-fazan.jpg" alt=""/>
+                <p>凤凰涅磐古典发簪女复
+                    古黑檀木簪子
+                </p>
+                <span>￥94.5<i>125人购买</i></span>
+            </li>
+        </ul>
+    </div>
+    <div class="fixed demo">
+        <p >
+            <i><img src="img/jishi/Js-shoucang.jpg" alt=""/></i>
+            收藏
+        </p>
+        <p >
+        	<a id="pro-kefu">
+	            <i><img src="img/jishi/Js-kefu.jpg" alt=""/></i>
+	            	客服
+        	</a>
+        </p>
+        <p  id="Js-ddgm" >
+            <span>￥158.00</span>
+            单独购买
+        </p>
+        <p id="Js-tuan">
+            <em>￥99.00</em>
+            2人团购
+        </p>
+
+    </div>
+
+    <div class="buy">
+
+        <div class="zhe">
+            <div class="zhe-top">
+                <img src="img/jishi/Js-fazan.jpg" alt=""/>
+                <div class="left-wenzi">
+                    <span>原创手工古典发簪复古民族风手<br>工步摇簪子简约盘.发
+                      <i class="mui-icon mui-icon-close mui-pull-right xbg" id="guan-bi"></i>
+                    </span>
+                    <p>
+                        <b>￥99.00</b>
+                        <span>以团10件/1件</span>
+                    </p>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="zhe-center">
+                <h3>颜色：</h3>
+                <p>默认</p>
+            </div>
+            <div class="buys">
+                <p>
+                    <i>购买数量</i>
+                    <em>
+                        <button id="jian" onclick="Min(this)">-</button><span id="one">1</span><button id="jia" onclick="add(this)">+</button>
+                    </em>
+                </p>
+            </div>
+            <div class="wan-chen">
+            	<a id="pindan" style="display: block;width: 100%;">完成</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    	
+    	 
+    //  	更多评价
+		document.getElementById("pro-moreReviews").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"js-pj.html",
+				id:"pro-moreReviews",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+
+    //  	店铺
+		document.getElementById("jindian").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"js-store.html",
+				id:"jindian",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+		
+    //  	客服
+		document.getElementById("pro-kefu").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"js-kefu.html",
+				id:"pro-kefu",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+		
+	//  	进入拼单页
+		document.getElementById("pindan").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"js-pindan.html",
+				id:"pindan",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+    	
+        $(document).ready(function () {
+            $("#Js-ddgm").click(function (e) {
+                e.stopPropagation();
+                $(".buy").fadeIn();
+                $(".hei-mu").fadeIn();
+            });
+            $('.hei-mu').click(function(e){
+                e.stopPropagation();
+                $(".hei-mu").stop().fadeOut();
+                $('.buy').stop().fadeOut();
+
+            });
+            $("#guan-bi").click(function (e) {
+                e.stopPropagation();
+                $(".hei-mu").stop().fadeOut();
+                $('.buy').stop().fadeOut();
+            })
+
+            $(".wan-chen").click(function (e) {
+                e.stopPropagation();
+                $(".hei-mu").stop().fadeOut();
+                $('.buy').stop().fadeOut();
+            })
+        });
+        $(document).ready(function () {
+            $("#Js-tuan").click(function (e) {
+                e.stopPropagation();
+                $(".buy").fadeIn();
+                $(".hei-mu").fadeIn();
+            });
+            $('.hei-mu').click(function(e){
+                e.stopPropagation();
+                $(".hei-mu").stop().fadeOut();
+                $('.buy').stop().fadeOut();
+
+            });
+            $("#guan-bi").click(function (e) {
+                e.stopPropagation();
+                $(".hei-mu").stop().fadeOut();
+                $('.buy').stop().fadeOut();
+            })
+            $(".wan-chen").click(function (e) {
+                e.stopPropagation();
+                $(".hei-mu").stop().fadeOut();
+                $('.buy').stop().fadeOut();
+            })
+        });
+
+
+        function Min(a){
+            var  txt= a.nextSibling.innerText;
+            txt--;
+            if(txt<1){
+                txt=1;
+            }
+            a.nextElementSibling.innerText=txt;
+        }
+        function add(a){
+            var  txt= a.previousSibling.innerText;
+            txt++;
+            if(txt>99){
+                txt=99;
+            }
+            a.previousSibling.innerText=txt;
+        }
+    </script>
+
+</div>
+
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+
+    var slider = mui("#slider");
+
+    slider.slider({
+        interval: 3000
+    });
+</script>
+<script src="js/mui.zoom.js"></script>
+	<script src="js/mui.previewimage.js"></script>
+	<script>
+		mui.previewImage();
+</script>
+</body>
+</html>

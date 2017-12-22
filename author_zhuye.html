@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>我的</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/public.css" rel="stylesheet"/>    
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style>
+    	.mui-control-content {
+			background-color: white;
+			min-height: 215px;
+		}
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{color: #007DBD;}
+		.mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-progress-bar{background-color: #007DBD;}
+		.mui-slider{margin-bottom: 50px;background-color: #fff;}
+		.mui-slider .mui-slider-group{ height:70vh;}
+		.mui-table-view-cell{padding: 0;}
+		.mui-table-view li{border: none;}
+		.userZhuye-type a h4{margin-top: -8px;margin-bottom: 11px;font-size: 14px;font-weight: normal;}
+		.zhanke-show{background-color: #f2f2f2;}
+    </style>
+</head>
+<body id="author-zhuye">
+	<header class="mui-bar mui-bar-nav rgba">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	</header>
+	<nav class="user-top clear">
+		<div id="sitting" class="user-set mui-icon mui-icon-gear-filled" style="position: relative;z-index: 999;"></div>
+		<div class="clear"></div>
+		<div class="user-touxiang"><img src="img/index/remen/liwu_img2.jpg" alt="" /></div>
+		<div class="user-name">
+			<h2>泷岛彗<span>山西省太原</span></h2>
+		</div>
+	</nav>
+
+	<div class="user-type">
+    	<div class="user-fensi">
+    		<p style="padding-left: 12px;line-height: 40px;font-size: 15px;color: #555;">
+    			接收各种皮具定制，微信15735654764
+    		</p>
+    	</div>
+    	<ul class="user-icon">
+    		<li>
+    			<img src="img/user/user_icon_siliao.jpg" alt="" />
+    			<h3>私聊</h3>
+    		</li>
+    		<li id="dengji">
+    			<img src="img/user/user_icon2.gif" alt="" />
+    			<h3>等级</h3>
+    		</li>
+    		<li>
+    			<img src="img/user/user_icon_dianpu.jpg" alt="" />
+    			<h3>店铺</h3>
+    		</li>
+    	</ul>
+	</div>
+	<div class="content">
+		<div id="slider" class="mui-slider">
+			<div class="userZhuye-type mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<a class="mui-control-item mui-active" href="#item1mobile">
+					<span>193</span>
+	    			<h4>栈客</h4>
+				</a>
+				<a class="mui-control-item" href="#item2mobile">
+					<span>56</span>
+	    			<h4>图文教程</h4>
+				</a>
+				<a class="mui-control-item" href="#item3mobile">
+					<span>56</span>
+	    			<h4>视频教程</h4>
+				</a>
+				<a class="mui-control-item" href="#item4mobile">
+					<span>72</span>
+	    			<h4>收藏</h4>
+				</a>
+			</div>
+			<div class="mui-slider-progress-bar mui-col-xs-3"></div>
+			<div class="mui-slider-group">
+				<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+					<div id="scroll1" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<div class="zhanke-show daren-show">
+								    	<div class="zhanke-show-item">
+								    		<div class="ke-name clear sml-touxiang">
+								    			<img src="img/index/remen/daren-person.jpg" alt="" />
+								    			<h3>泷岛彗<span><a>一天前</a></h3>
+								    		</div>
+								    		<p class="ke-zuopin-intro">
+								    			皮制钱包夹
+								    		</p>
+								    		<ul class="daren-zuopin">
+								    			<li><img src="img/index/remen/daren-zuopin1-1.jpg" alt="" /></li>
+								    			<li><img src="img/index/remen/daren-zuopin1-3.jpg" alt="" /></li>
+								    			<li><img src="img/index/remen/daren-zuopin1-2.jpg" alt="" /></li>
+								    		</ul>
+								    	</div>
+								    	<div class="zhanke-show-item">
+								    		<div class="ke-name clear sml-touxiang">
+								    			<img src="img/index/remen/daren-person.jpg" alt="" />
+								    			<h3>泷岛彗<span><a>一天前</a></h3>
+								    		</div>
+								    		<p class="ke-zuopin-intro">
+								    			苔藓里竟然长出了水晶，而且比黑夜里的星星还迷人~美美哒，让神奇的水晶之光常伴你的左右吧~~
+								    		</p>
+								    		<ul class="daren-zuopin">
+								    			<a>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-1.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-1.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-3.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-3.jpg" alt="" /></li>
+								    			</a>
+								    		</ul>
+								    	</div>
+
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="item2mobile" class="mui-slider-item mui-control-content">
+					<div id="scroll2" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<ul class="tuwen-list">
+								    	<li>
+								    		<a>
+									    		<img src="img/index/remen/hot_jiaocheng5.jpg" alt="" />
+									    		<div class="tw-list-text">
+									    			<h2>风琴位长款钱包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+									    		<img src="img/index/remen/hot_jiaocheng3.jpg" alt="" />
+									    		<div class="tw-list-text">
+									    			<h2>风琴位长款钱包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+									    		<img src="img/index/remen/hot_jiaocheng2.jpg" alt="" />
+									    		<div class="tw-list-text">
+									    			<h2>风琴位长款钱包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+									    		<img src="img/index/remen/cailiao_pro2.jpg" alt="" />
+									    		<div class="tw-list-text">
+									    			<h2>风琴位长款钱包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+									    		<img src="img/index/remen/hot_jiaocheng6.jpg" alt="" />
+									    		<div class="tw-list-text">
+									    			<h2>风琴位长款钱包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+									    		<img src="img/index/remen/hot_jiaocheng4.jpg" alt="" />
+									    		<div class="tw-list-text">
+									    			<h2>风琴位长款钱包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    </ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="item3mobile" class="mui-slider-item mui-control-content">
+					<div id="scroll3" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<ul class="tuwen-list">
+								    	<li>
+								    		<a>
+								    			<div class="video-thumb">
+								    				<img src="img/jishi/shougong-img2.jpg" alt="" />
+								    				<div class="vid-play"><img src="img/index/remen/hot_jiaocheng_play.png" alt="" /></div>
+								    			</div>
+									    		<div class="tw-list-text">
+									    			<h2>皮雕唐草女式宴会包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+								    			<div class="video-thumb">
+								    				<img src="img/jishi/shougong-img1.jpg" alt="" />
+								    				<div class="vid-play"><img src="img/index/remen/hot_jiaocheng_play.png" alt="" /></div>
+								    			</div>
+									    		<div class="tw-list-text">
+									    			<h2>皮雕唐草女式宴会包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+								    			<div class="video-thumb">
+								    				<img src="img/jishi/shougong-img3.jpg" alt="" />
+								    				<div class="vid-play"><img src="img/index/remen/hot_jiaocheng_play.png" alt="" /></div>
+								    			</div>
+									    		<div class="tw-list-text">
+									    			<h2>皮雕唐草女式宴会包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+								    			<div class="video-thumb">
+								    				<img src="img/jishi/shougong-img4.jpg" alt="" />
+								    				<div class="vid-play"><img src="img/index/remen/hot_jiaocheng_play.png" alt="" /></div>
+								    			</div>
+									    		<div class="tw-list-text">
+									    			<h2>皮雕唐草女式宴会包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+								    			<div class="video-thumb">
+								    				<img src="img/index/remen/cailiao_pro7.jpg" alt="" />
+								    				<div class="vid-play"><img src="img/index/remen/hot_jiaocheng_play.png" alt="" /></div>
+								    			</div>
+									    		<div class="tw-list-text">
+									    			<h2>皮雕唐草女式宴会包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    	<li>
+								    		<a>
+								    			<div class="video-thumb">
+								    				<img src="img/index/remen/daren-zuopin1-3.jpg" alt="" />
+								    				<div class="vid-play"><img src="img/index/remen/hot_jiaocheng_play.png" alt="" /></div>
+								    			</div>
+									    		<div class="tw-list-text">
+									    			<h2>皮雕唐草女式宴会包</h2>
+									    			<div class="t-zan">
+									    				<p>人气:377</p>
+									    				<p>赞:16</p>
+									    			</div>
+									    		</div>
+								    		</a>
+								    	</li>
+								    </ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="item4mobile" class="mui-slider-item mui-control-content">
+					<div id="scroll4" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<div class="zhanke-show daren-show">
+								    	<div class="zhanke-show-item">
+								    		<div class="ke-name clear sml-touxiang">
+								    			<img src="img/index/remen/daren-person.jpg" alt="" />
+								    			<h3>泷岛彗<span><a>一天前</a></h3>
+								    		</div>
+								    		<p class="ke-zuopin-intro">
+								    			皮制小配件
+								    		</p>
+								    		<ul class="daren-zuopin">
+								    			<li><img src="img/index/remen/hot_jiaocheng4.jpg" alt="" /></li>
+								    			<li><img src="img/index/remen/hot_jiaocheng5.jpg" alt="" /></li>
+								    			<li><img src="img/index/remen/hot_jiaocheng6.jpg" alt="" /></li>
+								    		</ul>
+								    	</div>
+								    	<div class="zhanke-show-item">
+								    		<div class="ke-name clear sml-touxiang">
+								    			<img src="img/index/remen/daren-person.jpg" alt="" />
+								    			<h3>泷岛彗<span><a>一天前</a></h3>
+								    		</div>
+								    		<p class="ke-zuopin-intro">
+								    			苔藓里竟然长出了水晶，而且比黑夜里的星星还迷人~美美哒，让神奇的水晶之光常伴你的左右吧~~
+								    		</p>
+								    		<ul class="daren-zuopin">
+								    			<a>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-1.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-1.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-3.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-2.jpg" alt="" /></li>
+									    			<li><img src="img/zhanke/tuijian/zuoping2-3.jpg" alt="" /></li>
+								    			</a>
+								    		</ul>
+								    	</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--
+		<h5 class="mui-content-padded">Color</h5>
+		<div class="mui-card">
+			<form class="mui-input-group">
+				<div class="mui-input-row mui-radio">
+					<label><span class="mui-bg-primary" style="display:block;width:25px;height:25px;"></span>
+					</label>
+					<input name="radio1" type="radio" checked value="primary">
+				</div>
+				<div class="mui-input-row mui-radio">
+					<label><span class="mui-bg-positive" style="display:block;width:25px;height:25px;"></span>
+					</label>
+					<input name="radio1" type="radio" value="positive">
+				</div>
+				<div class="mui-input-row mui-radio">
+					<label><span class="mui-bg-negative" style="display:block;width:25px;height:25px;"></span>
+					</label>
+					<input name="radio1" type="radio" value="negative">
+				</div>
+			</form>
+		</div>-->
+
+	</div>
+	<script>
+		mui.init({
+			swipeBack: false
+		});
+		(function($) {
+			$('.mui-scroll-wrapper').scroll({
+				indicators: true //是否显示滚动条
+			});
+			var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+			var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+			var html4 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+			var html5 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+			
+			var item2 = document.getElementById('item2mobile');
+			var item3 = document.getElementById('item3mobile');
+			var item4 = document.getElementById('item4mobile');
+			var item5 = document.getElementById('item5mobile');
+			document.getElementById('slider').addEventListener('slide', function(e) {
+				if (e.detail.slideNumber === 1) {
+					if (item2.querySelector('.mui-loading')) {
+						setTimeout(function() {
+							item2.querySelector('.mui-scroll').innerHTML = html2;
+						}, 500);
+					}
+				} else if (e.detail.slideNumber === 2) {
+					if (item3.querySelector('.mui-loading')) {
+						setTimeout(function() {
+							item3.querySelector('.mui-scroll').innerHTML = html3;
+						}, 500);
+					}
+				}
+				else if (e.detail.slideNumber === 3) {
+					if (item4.querySelector('.mui-loading')) {
+						setTimeout(function() {
+							item4.querySelector('.mui-scroll').innerHTML = html4;
+						}, 500);
+					}
+				}
+				else if (e.detail.slideNumber === 4) {
+					if (item5.querySelector('.mui-loading')) {
+						setTimeout(function() {
+							item5.querySelector('.mui-scroll').innerHTML = html5;
+						}, 500);
+					}
+				}
+			});
+			var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+			$('.mui-input-group').on('change', 'input', function() {
+				if (this.checked) {
+					sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+					//force repaint
+					sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+				}
+			});
+		})(mui);
+		
+	//设置
+		document.getElementById("sitting").addEventListener("tap",function(){
+			mui.openWindow({
+				url:"user-sitting.html",
+				id:"user-sitting",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:200
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			});
+		});
+		
+	//点击等级
+		document.getElementById("dengji").addEventListener("tap",function(){
+			mui.openWindow({
+				url:"dengji.html",
+				id:"dengji",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:200
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			});
+		});			
+
+	</script>
+
+</body>
+
+</html>

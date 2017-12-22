@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link rel="stylesheet" href="css/mui.css"/>
+    <script type="text/javascript" src="js/resize.js"></script>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/Js-style.css"/>
+    <style>
+        .xian-shi{
+            display: flex;
+            position: relative;
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        .ping-you{
+            position: absolute;
+            top: 50px;
+            left: 15px;
+            background: #0071AB;
+            color: white;
+            border-radius: 10px;
+            font-size: 10px;
+            width: 30px;
+            height: 18px;
+            text-align: center;
+            line-height: 18px;
+        }
+    </style>
+</head>
+<body  onload="start()" id="pindan">
+<header id="header" class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">作品</h1>
+    <a class="mui-icon mui-icon-search mui-pull-right"></a>
+</header>
+<div class="mui-content">
+    <div class="Js-shop">
+    	<div class="pro-img">
+        	<img src="img/jishi/Js-fazan.jpg" alt=""/>
+    	</div>
+        <div class="right-we">
+            <p>原创手工 &nbsp; 古典发簪 复古名族风手工步瑶簪子简约盘发头饰饰品</p>
+            <span>2人拼单/拼单省59.00元</span>
+            <h1>99.00</h1>
+        </div>
+    </div>
+    <div class="qit">
+        <img src="img/jishi/qi-tian.jpg" alt=""/>
+    </div>
+    <div class="qu-pin-dan">
+        <div class="xian-shi">
+            <img src="img/jishi/Js-kfu.png" alt=""/>
+            <img src="img/jishi/wen-hao.gif" alt=""/>
+            <div class="ping-you">
+            	拼友
+            </div>
+        </div>
+        <p>还差<i>1</i>人，剩余&nbsp;&nbsp;&nbsp;<span id="time">20:00:00</span></p>
+        <em><a href="Js-zhifu.html" style="display: block;width: 100%;">去拼单</a></em>
+        <b>拼单须知<span></span>2人拼单<span></span>人满发货<span></span>未满退款</b>
+    </div>
+</div>
+<script>
+    var a=new Array();
+    a[0]=20;
+    a[1]=0;
+    a[2]=0;
+    function jishi(){
+        if(a[2]>0){
+            a[2]--;
+        }else if(a[1]>0){
+            a[1]--;
+            a[2]=59;
+        }else if(a[0]>0){
+            a[0]--;
+            a[1]=59;
+            a[2]=59;
+        }else{
+
+        }
+        var str1=a[0]+":";
+        var str2=a[1]+":";
+        var str3=a[2];
+        if(a[0]<10){
+            str1="0"+a[0]+":";
+        }else
+        if(a[1]<10){
+            str2="0"+a[1]+":";
+        }
+        if(a[2]<10){
+            str3="0"+a[2];
+        }
+        time.innerHTML=str1+str2+str3;
+    }
+    function start(){
+        setInterval("jishi()",1000);
+    }
+
+
+</script>
+
+</body>
+</html>

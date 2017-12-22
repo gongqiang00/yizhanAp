@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	    <meta name="apple-mobile-web-app-csapable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhanghao.css"/>
+	</head>
+	<body id="reset">
+		<header class="header">
+			<a id="fan" class="mui-action-back mui-icon mui-icon-back"></a>
+		</header>
+		<div class="load">
+			<div>
+				<h2>重置密码</h2>
+				<div class="con">
+					<form action="" method="post">
+						<input type="text" id="" value="" placeholder="请设置新的密码"/>
+						<input type="password" name="" placeholder="请再次输入新的密码"/>
+						<input type="button" id="back_login" value="完成" style="color: #fff;"/>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+	//  	点击“查看全部热门教程”右滑进入教程页面
+		document.getElementById("back_login").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"login.html",
+				id:"back_login",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+		</script>
+	</body>
+</html>

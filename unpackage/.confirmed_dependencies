@@ -1,0 +1,636 @@
+{
+  "index.html": {
+    "resources": [
+      "css/index.css",
+      "img/index/remen/rm_banner1.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/public.css",
+      "img/index/remen/icon-xianshangke.jpg",
+      "img/index/remen/icon-daren.jpg",
+      "img/index/remen/icon-lwdz.jpg",
+      "img/index/remen/icon-cailiao.jpg",
+      "img/index/remen/rm_dingzhi.jpg",
+      "img/index/remen/rm_subject.jpg",
+      "img/index/remen/hot_online1.jpg",
+      "img/index/remen/hot_online3.jpg",
+      "img/index/remen/hot_online2.jpg",
+      "img/index/remen/hot_shot2.jpg",
+      "img/index/remen/hot_shot3.jpg",
+      "img/index/remen/hot_shot1.jpg",
+      "img/index/remen/hot_jiaocheng1.jpg",
+      "img/index/remen/hot_jiaocheng3.jpg",
+      "img/index/remen/hot_jiaocheng4.jpg",
+      "img/index/remen/hot_jiaocheng5.jpg",
+      "img/index/remen/hot_jiaocheng6.jpg",
+      "img/index/remen/hot_jiaocheng2.jpg",
+      "img/index/remen/hot_jiaocheng_play.png",
+      "img/index/remen/rm-cailiao2.jpg",
+      "img/index/remen/rm-cailiao4.jpg",
+      "img/index/remen/rm-cailiao3.jpg",
+      "img/index/remen/rm-cailiao1.jpg",
+      "js/castapp.js",
+      "home.html",
+      "list_teaching.html",
+      "list_zhanke.html",
+      "css/style.css",
+      "list_jishi.html",
+      "list_user.html",
+      "js/jquery-3.2.1.min.js"
+    ],
+    "refer": [
+      "home.html",
+      "list_zhanke.html",
+      "list_teaching.html",
+      "list_jishi.html",
+      "list_user.html"
+    ]
+  },
+  "home.html": {
+    "resources": [
+      "img/index/remen/hot_jiaocheng3.jpg",
+      "img/index/remen/rm_dingzhi.jpg",
+      "img/index/remen/rm-cailiao2.jpg",
+      "img/index/remen/rm-cailiao4.jpg",
+      "css/public.css",
+      "img/index/remen/icon-daren.jpg",
+      "css/index.css",
+      "js/mui.min.js",
+      "img/index/remen/icon-cailiao.jpg",
+      "img/index/remen/rm-cailiao3.jpg",
+      "img/index/remen/hot_shot1.jpg",
+      "img/index/remen/icon-xianshangke.jpg",
+      "img/index/remen/hot_shot2.jpg",
+      "fonts/mui.ttf",
+      "img/index/remen/hot_jiaocheng4.jpg",
+      "img/index/remen/rm-cailiao1.jpg",
+      "img/index/remen/hot_jiaocheng1.jpg",
+      "img/index/remen/hot_shot3.jpg",
+      "img/index/remen/hot_online3.jpg",
+      "img/index/remen/icon-lwdz.jpg",
+      "img/index/remen/rm_banner1.jpg",
+      "img/index/remen/rm_subject.jpg",
+      "css/mui.min.css",
+      "img/index/remen/hot_online2.jpg",
+      "img/index/remen/hot_jiaocheng2.jpg",
+      "img/index/remen/hot_jiaocheng_play.png",
+      "img/index/remen/hot_online1.jpg",
+      "css/style.css",
+      "home.html",
+      "js/jquery-3.2.1.min.js",
+      "img/index/faxian/fx-img1.jpg",
+      "img/index/faxian/fx-img4.jpg",
+      "img/index/faxian/fx-img2.jpg",
+      "img/index/faxian/fx-img3.jpg",
+      "img/index/zhuanti/zt-pic3.jpg",
+      "img/index/zhuanti/zt-pic4.jpg",
+      "img/index/zhuanti/zt-pic1.jpg",
+      "img/index/zhuanti/zt-pic2.jpg",
+      "img/index/huodong/hd-pic1.jpg",
+      "img/index/huodong/hd-pic2.jpg",
+      "img/index/huodong/hd-pic3.jpg",
+      "zhuanti_more.html",
+      "faxian_xiangqing.html"
+    ],
+    "refer": [
+      "home.html",
+      "home_daren.html",
+      "home_cailiao.html",
+      "home_liwu.html",
+      "home_xianshang.html",
+      "home_xianClass.html",
+      "zhuanti_more.html",
+      "faxian_xiangqing.html",
+      "new-xianq.html",
+      "Js-banner.html"
+    ]
+  },
+  "list_teaching.html": {
+    "resources": [
+      "css/index.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/public.css",
+      "css/list_teaching.css",
+      "img/60x60.gif",
+      "index.html",
+      "css/style.css",
+      "img/teaching/tuwen-img2.jpg",
+      "img/teaching/tuwen-img6.jpg",
+      "img/teaching/tuwen-img3.jpg",
+      "img/teaching/tuwen-img4.jpg",
+      "img/teaching/tuwen-img1.jpg",
+      "img/teaching/tuwen-img5.jpg",
+      "js/jquery-3.2.1.min.js",
+      "img/teaching/zhibo_ren6.jpg",
+      "img/teaching/zhibo_ren1.jpg",
+      "img/teaching/zhibo_ren5.jpg",
+      "img/teaching/zhibo_img3.jpg",
+      "img/teaching/video_vid3.jpg",
+      "img/teaching/zhibo_ren3.jpg",
+      "img/teaching/zhibo_ren2.jpg",
+      "img/teaching/video_vid2.jpg",
+      "img/teaching/zhibo_img1.jpg",
+      "img/teaching/zhibo_ren4.jpg",
+      "img/teaching/zhibo_img2.jpg",
+      "img/teaching/video_vid1.jpg",
+      "img/index/remen/hot_jiaocheng_play.png",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [
+      "index.html",
+      "tea_zhiboIng.html"
+    ]
+  },
+  "list_zhanke.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/list_teaching.css",
+      "css/public.css",
+      "css/list_zhanke.css",
+      "img/zhanke/tuijian/tuijian-banner.jpg",
+      "img/zhanke/tuijian/tuijian_touxiang.jpg",
+      "img/zhanke/tuijian/zuoping1.jpg",
+      "css/style.css",
+      "js/jquery-3.2.1.min.js",
+      "img/index/remen/cailiao_banner.jpg",
+      "img/index/remen/rm_banner1.jpg"
+    ],
+    "refer": []
+  },
+  "list_jishi.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/list_zhanke.css",
+      "css/mui.min.css",
+      "css/public.css",
+      "css/list_jishi.css",
+      "img/index/remen/rm_banner1.jpg",
+      "img/index/remen/rm_dingzhi.jpg",
+      "img/index/remen/rm_subject.jpg",
+      "css/style.css",
+      "img/index/remen/rm-cailiao2.jpg",
+      "img/index/remen/rm-cailiao4.jpg",
+      "img/index/remen/rm-cailiao3.jpg",
+      "img/index/remen/rm-cailiao1.jpg",
+      "img/index/remen/hot_jiaocheng2.jpg",
+      "img/index/remen/hot_jiaocheng1.jpg",
+      "img/index/remen/hot_jiaocheng4.jpg",
+      "img/index/remen/hot_jiaocheng6.jpg",
+      "img/jishi/jishi_banner.gif",
+      "img/jishi/shougong-img2.jpg",
+      "img/jishi/shougong-img4.jpg",
+      "img/jishi/shougong-img1.jpg",
+      "img/jishi/shougong-img3.jpg",
+      "img/jishi/shouyiren-banner.jpg",
+      "img/jishi/shouyiren-img1.jpg",
+      "img/jishi/shouyiren-img2.jpg",
+      "img/jishi/today_news-img1.jpg",
+      "img/jishi/today_news-img2.jpg",
+      "img/jishi/today_news-img3.jpg",
+      "img/jishi/today_news-img4.jpg",
+      "js/jquery-3.2.1.min.js"
+    ],
+    "refer": []
+  },
+  "list_user.html": {
+    "resources": [
+      "css/list_user.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/public.css",
+      "css/style.css",
+      "img/user/icon-set.gif",
+      "img/user/user_bj.gif",
+      "img/user/user-touxiang.gif",
+      "img/user/user_icon3.gif",
+      "img/user/user_icon2.gif",
+      "img/user/user_icon1.gif",
+      "js/jquery-3.2.1.min.js",
+      "fanhui.html",
+      "test_list.html"
+    ],
+    "refer": [
+      "fanhui.html",
+      "test_list.html",
+      "pro_indent.html"
+    ]
+  },
+  "home_daren.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "img/index/remen/daren-bannerBarjpg.jpg",
+      "img/zhanke/tuijian/tuijian_touxiang.jpg",
+      "img/zhanke/tuijian/zuoping1.jpg",
+      "img/index/remen/daren-person.jpg",
+      "img/index/remen/daren-zuopin1-1.jpg",
+      "img/index/remen/daren-zuopin1-2.jpg",
+      "img/index/remen/daren-zuopin1-3.jpg",
+      "img/index/remen/daren-zuopin2-2.jpg",
+      "img/index/remen/daren-zuopin2-1.jpg",
+      "img/index/remen/daren-zuopin3.jpg",
+      "img/index/remen/daren-zuopin2-3.jpg",
+      "img/index/remen/daren-zuopin5.jpg",
+      "img/index/remen/daren-zuopin4.jpg",
+      "daren_con.html",
+      "img/zhanke/tuijian/zuoping2-1.jpg",
+      "img/zhanke/tuijian/zuoping2.jpg",
+      "img/zhanke/tuijian/zuoping2-2.jpg",
+      "daren_please.html"
+    ],
+    "refer": [
+      "daren_con.html",
+      "daren_please.html"
+    ]
+  },
+  "home_liwu.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "img/index/remen/hot_online3.jpg",
+      "img/index/remen/hot_online2.jpg",
+      "img/index/remen/hot_online1.jpg",
+      "img/index/remen/liwu_img1.jpg",
+      "img/index/remen/liwu_img2.jpg",
+      "img/index/remen/liwu_img3.jpg"
+    ],
+    "refer": []
+  },
+  "home_cailiao.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "img/index/remen/cailiao_banner.jpg",
+      "img/index/remen/cailiao_pro1.jpg",
+      "img/index/remen/cailiao_pro5.jpg",
+      "img/index/remen/cailiao_pro11.jpg",
+      "img/index/remen/cailiao_pro8.jpg",
+      "img/index/remen/cailiao_pro2.jpg",
+      "img/index/remen/cailiao_pro12.jpg",
+      "img/index/remen/cailiao_pro7.jpg",
+      "img/index/remen/cailiao_pro4.jpg",
+      "img/index/remen/cailiao_pro6.jpg",
+      "img/index/remen/cailiao_pro3.jpg"
+    ],
+    "refer": []
+  },
+  "home_xianshang.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "img/index/remen/xianshang_img1.jpg",
+      "img/index/remen/xianshang_img4.jpg",
+      "img/index/remen/xianshang_img5.jpg",
+      "img/index/remen/xianshang_img3.jpg",
+      "img/index/remen/xianshang_img2.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin2.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin1.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin3.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin4.jpg"
+    ],
+    "refer": []
+  },
+  "daren_con.html": {
+    "resources": [
+      "home_daren.html",
+      "img/index/remen/daren-zuopin1-2.jpg",
+      "img/index/remen/daren-zuopin1-1.jpg",
+      "img/index/remen/daren-person.jpg",
+      "img/index/remen/daren-zuopin1-3.jpg",
+      "js/mui.min.js",
+      "img/zhanke/tuijian/tuijian_touxiang.jpg",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "fonts/mui.ttf",
+      "img/zhanke/tuijian/zuoping2-1.jpg",
+      "img/zhanke/tuijian/zuoping2-3.jpg",
+      "img/zhanke/tuijian/zuoping2.jpg",
+      "img/zhanke/tuijian/zuoping2-2.jpg",
+      "img/index/remen/daren-person3.jpg",
+      "img/index/remen/daren-person2.jpg",
+      "img/index/remen/daren-person4.jpg"
+    ],
+    "refer": [
+      "home_daren.html"
+    ]
+  },
+  "daren_please.html": {
+    "resources": [
+      "home_daren.html",
+      "img/index/remen/daren-shengqing.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js"
+    ],
+    "refer": [
+      "home_daren.html"
+    ]
+  },
+  "home_xianClass.html": {
+    "resources": [
+      "img/index/remen/xian_xiangqing_stu_zuopin2.jpg",
+      "img/index/remen/xianshang_img5.jpg",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "img/index/remen/xian_xiangqing_stu_zuopin1.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin3.jpg",
+      "css/public.css",
+      "img/index/remen/xianshang_img4.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin4.jpg",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "img/index/remen/xianshang_img3.jpg",
+      "js/jquery-3.2.1.min.js",
+      "img/index/remen/xianshang_img1.jpg",
+      "img/index/remen/xianshang_img2.jpg",
+      "xianClass-xiangqing.html"
+    ],
+    "refer": [
+      "xianClass-xiangqing.html"
+    ]
+  },
+  "xianClass-xiangqing.html": {
+    "resources": [
+      "home_xianClass.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "img/index/remen/xian_xiangqing_banner.jpg",
+      "img/index/remen/xian_xiangqing_banner2.jpg",
+      "img/index/remen/xian_xiangqing_teacher.jpg",
+      "img/index/remen/xian_xiangqing_tea_zuopin1.jpg",
+      "img/index/remen/xian_xiangqing_tea_zuopin3.jpg",
+      "img/index/remen/xian_xiangqing_tea_zuopin6.jpg",
+      "img/index/remen/xian_xiangqing_tea_zuopin2.jpg",
+      "img/index/remen/xian_xiangqing_tea_zuopin5.jpg",
+      "img/index/remen/xian_xiangqing_tea_zuopin4.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin2.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin1.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin3.jpg",
+      "img/index/remen/xian_xiangqing_stu_zuopin4.jpg",
+      "Class-indent.html"
+    ],
+    "refer": [
+      "home_xianClass.html",
+      "Class-indent.html"
+    ]
+  },
+  "Class-indent.html": {
+    "resources": [
+      "xianClass-xiangqing.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "img/index/remen/xian_dingdan_img.jpg",
+      "zhifu_fail.html",
+      "zhifu_success.html"
+    ],
+    "refer": [
+      "xianClass-xiangqing.html",
+      "zhifu_fail.html",
+      "zhifu_success.html"
+    ]
+  },
+  "zhifu_fail.html": {
+    "resources": [
+      "Class-indent.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "img/index/remen/xian_zhifu_fail.jpg",
+      "home.html",
+      "index.html"
+    ],
+    "refer": [
+      "Class-indent.html",
+      "home.html",
+      "index.html"
+    ]
+  },
+  "zhifu_success.html": {
+    "resources": [
+      "img/index/remen/xian_zhifu_success.jpg",
+      "Class-indent.html",
+      "index.html"
+    ],
+    "refer": [
+      "Class-indent.html",
+      "index.html"
+    ]
+  },
+  "zhuanti_xiangqing.html": {
+    "resources": [
+      "img/index/remen/daren-person3.jpg",
+      "img/index/remen/daren-person3.jpg/",
+      "img/index/remen/daren-person2.jpg",
+      "img/index/remen/daren-person4.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "img/index/zhuanti/zt_more_img2.jpg",
+      "zhuanti_more.html"
+    ],
+    "refer": [
+      "zhuanti_more.html"
+    ]
+  },
+  "zhuanti_more.html": {
+    "resources": [
+      "img/index/zhuanti/zt_more_img1.jpg",
+      "zhuanti_xiangqing.html",
+      "img/index/zhuanti/zt_more_img6.jpg",
+      "img/index/zhuanti/zt_more_img5.jpg",
+      "img/index/zhuanti/zt_more_img2.jpg",
+      "img/index/zhuanti/zt_more_banner.jpg",
+      "img/index/zhuanti/zt_more_img4.jpg",
+      "img/index/zhuanti/zt_more_img3.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js"
+    ],
+    "refer": [
+      "zhuanti_xiangqing.html"
+    ]
+  },
+  "faxian_xiangqing.html": {
+    "resources": [
+      "img/index/faxian/fx-xq-cixiu7.jpg",
+      "img/index/remen/daren-person3.jpg",
+      "img/index/remen/daren-person2.jpg",
+      "img/index/faxian/fx-xq-cixiu6.jpg",
+      "img/index/faxian/fx-xq-cixiu4.jpg",
+      "img/index/faxian/fx-xq-cixiu1.jpg",
+      "img/index/faxian/fx-xq-cixiu3.jpg",
+      "img/index/faxian/fx-xq-cixiu8.jpg",
+      "img/index/faxian/fx-xq-cixiu9.jpg",
+      "img/index/remen/daren-person4.jpg",
+      "img/index/remen/daren-person.jpg",
+      "img/index/faxian/fx-xq-cixiu2.jpg",
+      "img/index/faxian/fx-xq-cixiu5.jpg",
+      "img/zhanke/tuijian/tuijian_touxiang.jpg",
+      "fonts/mui.ttf",
+      "css/style.css",
+      "css/public.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/jquery-3.2.1.min.js"
+    ],
+    "refer": []
+  },
+  "fanhui.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "test_list.html": {
+    "refer": [
+      "test_returnIndex.html"
+    ],
+    "resources": []
+  },
+  "test_returnIndex.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "new-xianq.html": {
+    "resources": [
+      "img/index/huodong/hdxq.jpg",
+      "img/index/huodong/hua2.jpg",
+      "img/index/huodong/yizi.jpg",
+      "img/index/huodong/gais.jpg",
+      "img/index/huodong/qnmx.jpg",
+      "img/index/huodong/liuc.jpg",
+      "img/index/huodong/hei-zi.jpg",
+      "css/mui.css",
+      "css/Js-style.css",
+      "img/index/huodong/tou-xiang.jpg",
+      "img/index/huodong/zuo-zhe.jpg",
+      "img/index/huodong/sekuai.jpg",
+      "img/index/huodong/tou-x2.jpg",
+      "img/index/huodong/hua.jpg",
+      "img/index/huodong/xiamu.jpg",
+      "fonts/mui.ttf",
+      "css/public.css",
+      "js/mui.min.js",
+      "canjiahuodong.html"
+    ],
+    "refer": [
+      "canjiahuodong.html"
+    ]
+  },
+  "canjiahuodong.html": {
+    "resources": [
+      "new-xianq.html",
+      "img/index/huodong/tian-jia.jpg",
+      "img/index/huodong/zhi-shi.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/public.css",
+      "css/mui.css",
+      "css/Js-style.css"
+    ],
+    "refer": [
+      "new-xianq.html"
+    ]
+  },
+  "Js-banner.html": {
+    "resources": [
+      "css/mui.css",
+      "img/jishi/Js-ban.png",
+      "css/Js-style.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "pro_indent.html": {
+    "resources": [
+      "img/jishi/Js-fenhuang.jpg",
+      "img/jishi/Js-fazan.jpg"
+    ],
+    "refer": []
+  },
+  "tea_zhiboIng.html": {
+    "resources": [
+      "img/teaching/zhibo_ren1.jpg",
+      "img/teaching/zhibo_ren5.jpg",
+      "img/teaching/zhiboIng-bj.jpg",
+      "fonts/iconfont.ttf",
+      "img/teaching/zhibo_ren3.jpg",
+      "img/teaching/zhibo_ren2.jpg"
+    ],
+    "refer": []
+  },
+  "Js-sell.html": {
+    "resources": [
+      "img/jishi/heihutao.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/public.css",
+      "js/jquery-3.2.1.min.js",
+      "css/mui.css",
+      "css/Js-style.css",
+      "img/jishi/Js-fazan.jpg"
+    ],
+    "refer": []
+  }
+}

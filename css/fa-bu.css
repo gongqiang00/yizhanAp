@@ -1,0 +1,43 @@
+body{
+    background: #F2F2F2;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 21rem;
+    padding: 1rem;
+    background: #FFFFFF;
+}
+.content p{
+    color: #C1C1C1;
+    font-size: 1.1rem;
+}
+.c-img{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    height: 7rem;
+}
+.c-img img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10px;
+}
+.fen-lie{
+
+    padding-left: 1rem;
+    width: 100%;
+    height: 5rem;
+    background: #FFFFFF;
+    margin-top: 3rem;
+}
+.fen-lie p{
+    font-size: 1.2rem;
+    line-height: 5rem;
+}
+.rotate{
+    transform: rotate(180deg);
+    color: #DDDDDD;font-size: 3rem;
+    line-height: 5rem;
+}

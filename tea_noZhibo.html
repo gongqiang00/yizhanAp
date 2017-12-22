@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>教程--播主未开播</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/public.css" rel="stylesheet"/>    
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+	<body>
+		<header class="mui-bar mui-bar-nav rgba huise">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+		<div class="no-zhibo">
+			<div>
+				<div class="no-zhibo-icon">
+					<img src="img/teaching/no-zhibo-icon.gif" alt="" />
+					<h2 class="">播主未开播~~</h2>
+				</div>
+				<div class="reviews-item noZhibo-btn" id="per-otherZhibo">
+					<div class="per-img"><img src="img/teaching/zhibo_ren2.jpg" alt="" /></div>
+					<div class="per-text">
+						观看播主其他直播
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	<script>
+	//  	点击“教程--直播--热门直播--未直播播主--列表”右滑进入直播页面
+		document.getElementById("per-otherZhibo").addEventListener('tap',function(){
+			mui.openWindow({
+				url:"tea_otherZhibo.html",
+				id:"per-otherZhibo",
+				createNew:true,
+				show:{
+					aniShow:"slide-in-right",
+					duration:400
+				},
+				waiting:{
+					title:"正在加载..."
+				}
+			})
+		});
+
+	</script>
+	</body>
+</html>

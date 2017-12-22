@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>活动详情页</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/public.css" rel="stylesheet"/>    
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+	</head>
+	<body id="huodong_xiangqing">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title" style="width: 200px;margin: 0 auto;">提亚拉之泪-塔露特</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="zhanke-show">
+	    	<div class="zhanke-show-item">
+	    		<div class="ke-name clear">
+	    			<img src="img/teaching/zhibo_ren3.jpg" alt="" />
+	    			<h3>清<span><a>2017-11-15</a></h3>
+	    		</div>
+	    		<p class="ke-zuopin-intro">
+	    			提亚拉之泪-塔露特
+	    		</p>
+	    		<ul class="daren-zuopin">
+	    			<a href="">
+		    			<li><img src="img/index/huodong/hd_xq1.jpg" alt="" /></li>
+		    			<li><img src="img/index/huodong/hd_xq2.jpg" alt="" /></li>
+		    			<li><img src="img/index/huodong/hd_xq3.jpg" alt="" /></li>
+		    			<li><img src="img/index/huodong/hd_xq4.jpg" alt="" /></li>
+		    			<li><img src="img/index/huodong/hd_xq5.jpg" alt="" /></li>
+		    			<li><img src="img/index/huodong/hd_xq6.jpg" alt="" /></li>
+		    			<li><img src="img/index/huodong/hd_xq7.jpg" alt="" /></li>
+		    			<li><img src="img/index/huodong/hd_xq8.jpg" alt="" /></li>
+		    			<li><img src="img/index/huodong/hd_xq9.jpg" alt="" /></li>
+	    			</a>
+	    		</ul>
+	    		<ul class="ke-dianzan">
+	    			<li class="cur"><span class="icon">&#xe697;</span>点赞</li>
+	    			<li><span class="icon">&#xe622;</span>评论</li>
+	    			<li><span class="icon">&#xe680;</span>收藏</li>
+	    		</ul>
+	    		<div class="hd-toupiao mui-text-center">
+	    			<ul class="mui-table-view">
+    			        <li class="mui-table-view-cell" style="border-top: 1px solid #efefef;">
+    			            <a class="mui-navigate-right" href="huodong_list.html">
+    			                <p class="mui-ellipsis" style="width: 88%;color: #007DBD;">活动名称：不只是玩泥巴！软陶粘土手作活动</p>
+    			            </a>
+    			        </li>
+	    			</ul>
+	    			<div class="btn-group">
+	    				<button class="btn" id="num">136</button>
+	    				<button class="btn btn-primary" id="toupiao" onclick="tp()">投票</button>
+	    			</div>
+	    		</div>
+				<div class="ke-reviews video-review">
+	    			<div class="re-group">
+	    				<div class="re-users re-user-name">
+	    					<a href=""><img src="img/zhanke/tuijian/tuijian_touxiang.jpg"/></a>
+	    					<a href=""><img src="img/index/remen/daren-person3.jpg"/></a>
+	    					<a href=""><img src="img/index/remen/daren-person4.jpg"/></a>
+	    				</div>
+	    				<div class="re-counts mui-ellipsis"><span>65</span>人点赞</div>
+	    			</div>
+	    			<ul class="reviews-area">
+	    				<li>
+	    					<div class="re-user-name clear">
+	    						<img src="img/index/remen/daren-person.jpg"/>
+	    						<h4>泷岛彗</h4>
+	    						<span>2017-10-28</span>
+	    					</div>
+	    					<div class="re-user-text">
+	    						<p class="mui-ellipsis">这是多高的？</p>
+	    						<a href="">回复ta</a>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<div class="re-user-name clear">
+	    						<img src="img/index/remen/daren-person3.jpg"/>
+	    						<h4>似是而非</h4>
+	    						<span>2017-10-28</span>
+	    					</div>
+	    					<div class="re-user-text">
+	    						<p class="mui-ellipsis">多长时间做好的呢？</p>
+	    						<a href="">回复ta</a>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<div class="re-user-name clear">
+	    						<img src="img/index/remen/daren-person4.jpg"/>
+	    						<h4>在下莫言</h4>
+	    						<span>2017-10-28</span>
+	    					</div>
+	    					<div class="re-user-text">
+	    						<p class="mui-ellipsis">粘土是什么牌子的呀？</p>
+	    						<a href="">回复ta</a>
+	    					</div>
+	    				</li>
+	    			</ul>
+	    			<a href="" class="subject-more">点击查看更多评论</a>
+	    		</div>
+	    	</div>
+	    </div>
+		</div>
+		
+		<nav class="mui-bar mui-bar-tab index-searching zhuanti-review">
+			<form>
+			    <div class="mui-pull-left">
+					<input type="text" placeholder="我想说......"/>
+			    </div>
+			    <div class="mui-pull-right tea-fabu"><span class="mui-icon mui-icon-personadd"></span></div>
+		   </form>
+		</nav>
+		
+		<script>
+			var i=0;
+			function tp(){
+				if(i>=1){
+					alert("您只能投一票");
+				}else{
+				var n=document.getElementById("num").innerText;
+//				alert(n);
+				var num=++n;
+				i++;
+				document.getElementById("num").innerText=num;
+				}
+			}
+		</script>
+	</body>
+</html>

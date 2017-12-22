@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>木艺</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="js/mui.min.js"></script>
+    <link rel="stylesheet" href="css/mui.css"/>
+    <script type="text/javascript" src="js/resize.js"></script>
+    <script type="text/javascript" src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
+    <link rel="stylesheet" href="css/public.css"/>
+
+    <link rel="stylesheet" href="css/Js-style.css"/>
+    <script type="text/javascript">
+        $(function() {
+
+            var $c = $('#carousel'),
+                    $w = $(window);
+
+            $c.carouFredSel({
+                align: false,
+                items: 10,
+                scroll: {
+                    items: 1,
+                    duration: 2000,
+                    timeoutDuration: 0,
+                    easing: 'linear',
+                    pauseOnHover: 'immediate'
+                }
+            });
+
+
+            $w.bind('resize.example', function() {
+                var nw = $w.width();
+                if (nw < 990) {
+                    nw = 990;
+                }
+
+                $c.width(nw * 3);
+                $c.parent().width(nw);
+
+            }).trigger('resize.example');
+
+        });
+    </script>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title tea-nav"><a href="">木艺</a></h1>
+    <a class="mui-icon mui-icon-search mui-pull-right"></a>
+</header>
+<div class="mui-content">
+    <div class="column">
+        <p>工具</p>
+
+        <p>木料</p>
+
+        <p>配件</p>
+
+        <p>套装</p>
+
+        <p>书籍</p>
+
+    </div>
+    <div class="recommend">
+        <h3>好店推荐</h3>
+        <div class="picture">
+            <div id="wrapper">
+                <div id="carousel">
+                    <div>
+                        <img src="img/jishi/Js-mugong.png"/>
+
+                    </div>
+                    <div>
+                        <img src="img/jishi/Js-mugong.png"/>
+
+                    </div>
+                    <div>
+                        <img src="img/jishi/Js-mugong.png" />
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="hot">
+        <div class="title">
+            <h3>热门木料</h3>
+        </div>
+        <ul>
+            <li>
+                <img src="img/jishi/heihutao.png" alt=""/>
+                <p>美国黑胡桃木料DIV手工练手雕刻木料</p>
+                <span>￥94.5<i>125人购买</i></span>
+                
+            </li>
+            <li>
+                <img src="img/jishi/heihutao.png" alt=""/>
+                <p>美国黑胡桃木料DIV手工练手雕刻木料</p>
+                <span>￥94.5<i>125人购买</i></span>
+            </li>
+            <li>
+                <img src="img/jishi/heihutao.png" alt=""/>
+                <p>美国黑胡桃木料DIV手工练手雕刻木料</p>
+                <span>￥94.5<i>125人购买</i></span>
+            </li>
+            <li>
+                <img src="img/jishi/heihutao.png" alt=""/>
+                <p>美国黑胡桃木料DIV手工练手雕刻木料</p>
+                <span>￥94.5<i>125人购买</i></span>
+            </li>
+        </ul>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

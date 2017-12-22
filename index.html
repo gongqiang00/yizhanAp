@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>公用首页</title>
+ <!--   <script src="js/jquery-3.2.1.min.js"></script>-->
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/public.css" rel="stylesheet"/>    
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+//    	mui.init();
+      	mui.init({
+      		keyEventBind:{
+      			backbutton:true
+      		}
+      	});
+      	
+		mui.old_back=mui.back;
+      	var clickNum=0;
+      	mui.back=function(){
+      		clickNum++;
+      		if(clickNum>1){
+      			plus.runtime.quit();
+      		}else{
+      			mui.toast("再按一次退出应用");
+      		}
+      		setTimeout(function(){
+      			clickNum=0
+      		},1000);
+      		return false;
+      	}
+    </script>
+</head>
+<body >
+	<!--首页底部导航-->
+	<nav class="mui-bar mui-bar-tab index" id="index">
+	    <a class="mui-tab-item mui-active" id="dafaletTab" href="home.html">
+	        <span class="mui-icon mui-icon-home"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item" href="list_teaching.html">
+	        <span class="mui-icon mui-icon-phone"></span>
+	        <span class="mui-tab-label">教程</span>
+	    </a>
+	    <a class="mui-tab-item" href="list_zhanke.html">
+	        <span class="mui-icon mui-icon-email"></span>
+	        <span class="mui-tab-label">栈客</span>
+	    </a>
+	    <a class="mui-tab-item" href="list_jishi.html">
+	        <span class="mui-icon mui-icon-gear"></span>
+	        <span class="mui-tab-label">集市</span>
+	    </a>
+	    <a class="mui-tab-item" href="list_user.html">
+	        <span class="mui-icon mui-icon-contact"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+	
+	
+	
+	
+<script src="js/castapp.js"></script>
+<script>
+	ca.init();
+	var pathArray=['home.html','list_teaching.html','list_zhanke.html','list_jishi.html','list_user.html'];
+	castapp.tabBar(pathArray);
+	
+	document.addEventListener("gohome",function(){
+		
+		var dafaletTab=document.getElementById("dafaletTab");
+//		模拟首页点击
+		mui.trigger(dafaletTab,'tap');
+		
+//		切换选项卡状态
+		var current = document.querySelector(".mui-tab-item.mui-active");
+	
+		
+			current.classList.remove("mui-active");
+			dafaletTab.classList.add("mui-active");
+
+		
+	});
+	
+	
+	
+</script>
+</body>
+</html>

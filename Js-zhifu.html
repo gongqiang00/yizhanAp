@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link rel="stylesheet" href="css/mui.css"/>
+    <script type="text/javascript" src="js/resize.js"></script>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/Js-style.css"/>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title tea-nav"><a href="">集市</a></h1>
+    <a class="mui-icon mui-icon-search mui-pull-right"></a>
+</header>
+<div class="mui-content">
+    <div class="my-de">
+        <a class=" mui-icon mui-icon-arrowright mui-righte"></a>
+        <p>莫雨&nbsp;&nbsp;<span>123456789</span></p>
+        <p>山西省太原市小店区高新区睿鼎国际4楼</p>
+
+    </div>
+    <div class="shopBuy">
+        <img src="img/jishi/Js-faz1.png" alt="">
+        <div class="shopBuy-we">
+            <p>原创手工古典发簪复古民族风手工步</p>
+            <span class="span2">包邮</span>
+            <span class="span1">艺栈担保</span>
+            <h1><em >￥ <b  style="font-weight: 300" id="yuanjia">99.00</b>  </em><i>2人拼单</i></h1>
+        </div>
+
+
+
+    </div>
+    <div class="buys">
+        <p>
+            <i>购买数量</i>
+            <em>
+                <button id="jian" onclick="Min(this)">-</button><span id="one">1</span><button id="jia" onclick="add(this)">+</button>
+            </em>
+        </p>
+    </div>
+    <div class="fixed demo">
+        <b>实付款：<i id="dajia">99.00</i> </b>
+        <strong>立即支付</strong>
+    </div>
+</div>
+<script>
+    function Min(a){
+        var  txt= a.nextSibling.innerText;
+        txt--;
+        if(txt<1){
+            txt=1;
+        }
+        a.nextElementSibling.innerText=txt;
+        zj(txt,a)
+    }
+    function add(a){
+        var  txt= a.previousSibling.innerText;
+        txt++;
+        if(txt>99){
+            txt=99;
+        }
+        a.previousSibling.innerText=txt;
+        zj(txt,a)
+    }
+    function zj(txt) {
+        var din=document.getElementById('yuanjia').innerText;
+        var sum;
+        sum=parseInt(din*txt);
+        document.getElementById("dajia").innerHTML=sum+'.00';
+    }
+
+</script>
+
+</body>
+</html>

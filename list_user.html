@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>我的</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/public.css" rel="stylesheet"/>    
+    <link href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="user-top clear">
+		<div class="user-set mui-icon mui-icon-gear-filled"></div>
+		<div class="clear"></div>
+		<div class="user-touxiang"><img src="img/user/user-touxiang.gif" alt="" /></div>
+		<div class="user-name">
+			<h2>我的昵称<span>所在地区</span></h2>
+		</div>		
+	</header>
+	<div class="mui-content">
+	    <div class="user-type">
+	    	<div class="user-fensi">
+	    		<a href="">粉丝</a>
+	    		<a href="">关注</a>
+	    	</div>
+	    	<ul class="user-icon">
+	    		<li>
+	    			<img src="img/user/user_icon1.gif" alt="" />
+	    			<h3>主页</h3>
+	    		</li>
+	    		<li>
+	    			<img src="img/user/user_icon2.gif" alt="" />
+	    			<h3>等级</h3>
+	    		</li>
+	    		<li>
+	    			<img src="img/user/user_icon3.gif" alt="" />
+	    			<h3>消息</h3>
+	    		</li>
+	    	</ul>
+	    </div>
+
+		<ul class="mui-table-view user-list">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                	观看记录
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" id="all">
+	                 	商品订单
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                 	课程订单
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                	直播次数
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell user-huiyuan"">
+	            <a class="mui-navigate-right">
+	                 	艺栈会员尊享6大特权
+	            </a>
+	            <div class="open-huiyuan">开通会员</div>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                 	帮助中心
+	            </a>
+	        </li>
+	    </ul>	
+	</div>
+
+	<script>
+		document.getElementById("all").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"pro_indent.html",
+					id:"list",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+				mui.fire(main,'goAll');
+			});
+	</script>
+	
+	
+</body>
+
+</html>
